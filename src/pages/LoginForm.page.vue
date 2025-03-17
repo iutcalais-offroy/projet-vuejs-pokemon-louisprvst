@@ -10,7 +10,7 @@
 
         <form @submit.prevent="store.login">
           <n-input
-            v-model="store.email"
+            v-model:value="store.email"
             type="email"
             placeholder="Entrez votre email"
             clearable
@@ -18,7 +18,7 @@
             style="margin-bottom: 20px;"
           />
           <n-input
-            v-model="store.password"
+            v-model:value="store.password"
             type="password"
             placeholder="Entrez votre mot de passe"
             clearable
@@ -31,13 +31,13 @@
         </form>
       </n-tab-pane> 
 
-      <n-tab-pane name="signup" tab="Inscription">
+      <n-tab-pane name="regster" tab="Inscription">
 
         <h2 style="text-align: center; margin-bottom: 20px;">Inscription</h2>
 
         <form @submit.prevent="store.register">
           <n-input
-            v-model="store.email"
+            v-model:value="store.email"
             type="email"
             placeholder="Entrez votre email"
             clearable
@@ -45,7 +45,7 @@
             style="margin-bottom: 20px;"
           />
           <n-input
-            v-model="store.password"
+            v-model:value="store.password"
             type="password"
             placeholder="Entrez votre mot de passe"
             clearable
@@ -53,7 +53,7 @@
             style="margin-bottom: 20px;"
           />
           <n-input
-            v-model="store.password"
+            v-model:value="store.confirmpassword"
             type="password"
             placeholder="Confirmez votre mot de passe"
             clearable
@@ -87,5 +87,4 @@ export default {
 
 
 <style scoped>
-/* Ajoutez des styles spécifiques ici si nécessaire */
 </style>
